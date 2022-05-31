@@ -1,0 +1,7 @@
+{
+    "title":"bienvenido a nuestra tienda",
+
+    "link1":"link a productos: http://localhost:8080/products",
+
+    "link2":"link a producto random: http://localhost:8080/productRandom"
+}

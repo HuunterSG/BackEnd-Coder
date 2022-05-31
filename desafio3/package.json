@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "name": "desafio3",
+  "version": "1.0.0",
+  "description": "Desafio 3 node server",
+  "main": "desafio3.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Agustin Jose Perez Rodriguez",
+  "license": "ISC"
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Fernet",
+        "price": 1000,
+        "id": 1
+    },
+    {
+        "title": "Coca-Cola",
+        "price": 200,
+        "id": 2
+    },
+    {
+        "title": "Cerveza: Andes Negra",
+        "price": 250,
+        "id": 3
+    },
+    {
+        "title": "Cerveza: Andes Roja",
+        "price": 220,
+        "id": 4
+    },
+    {
+        "title": "Cerveza: Andes IPA",
+        "price": 220,
+        "id": 5
+    },
+    {
+        "title": "Cerveza: Andes Honey",
+        "price": 300,
+        "id": 6
+    }
+]
