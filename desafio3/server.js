@@ -5,17 +5,23 @@ app = express();
 const fs = require('fs');
 
  const start = (require, response) => {
-    fs.readFile('./desafio3/instructions.txt', 'utf-8', (error, data)=>{
-        if (error) console.log(error);
-        const instructions = JSON.parse(data);
-        response.json({
-            instructions
-        })
-    })
+    // fs.readFile('./desafio3/instructions.txt', 'utf-8', (error, data)=>{
+    //     if (error) console.log(error);
+    //     const instructions = JSON.parse(data);
+    //     response.json({
+    //         instructions
+    //     })
+    // })
+    response.send(`<div>
+                    <h1> La conexion ha sido exitosa </h1> 
+                    <button><a href="http://localhost:8080/products">Lista de Productos!!</a></button>
+                    <br>
+                    <button><a href="http://localhost:8080/productRandom">Producto Random!!</a></button>
+                    </div> `)
 }
 
 const getProducts = (require, response) => {
-    fs.readFile('./desafio3/products.txt', 'utf-8', (error, data)=>{
+    fs.readFile('./products.txt', 'utf-8', (error, data)=>{
         if (error) console.log(error);
         const products = JSON.parse(data);
         response.json({
@@ -25,7 +31,7 @@ const getProducts = (require, response) => {
 }
 
 const getProductRandom = (require, response) => {
-    fs.readFile('./desafio3/products.txt', 'utf-8', (error, data)=>{
+    fs.readFile('./products.txt', 'utf-8', (error, data)=>{
         if (error) error;
         const products = JSON.parse(data);
         const productRandom = Math.floor(Math.random()*products.length)
