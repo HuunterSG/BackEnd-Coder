@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+
+#form{
+    background-color: aliceblue;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 25px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin: 2px;
+    
+}
+input{
+    margin: 2px;
+    background: gray;
+    border: hidden;
+    border-radius: 25px;
+}
+button{
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    border: hidden;
+    box-shadow: inset 1px 1px 2px rgb(65, 84, 255);
+}
