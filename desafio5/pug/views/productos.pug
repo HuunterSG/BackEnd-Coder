@@ -1,0 +1,25 @@
+doctype html 
+html(lang="es")
+head
+    title PUG
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+body 
+    h1 Lista de Productos 
+    if productos
+    tr
+      th Título
+      th Precio
+    br
+    each prod in productos 
+        tr
+            td= prod.title 
+            td= prod.price 
+        br
+    else 
+        h2 NO HAY PRODUCTOS DISPONIBLES 
+
+    a(href="/")
+        button Volver al formulario de carga
+    

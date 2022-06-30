@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Productos EJS</title>
+        
+    </head>
+
+    <body>
+        <h1>Bienvenido estamos usando EJS  </h1>
+        <div>
+            <h2 class="title">Lista de productos</h1>
+
+            <table class="product-list">
+                <tr>
+                    <th>Título</th>
+                    <th>Precio</th>
+                    
+                </tr>
+                <% productos.forEach((product)=> { %>
+                    <tr>
+                        <td>
+                            <%= product.title %>
+                        </td>
+                        <td>
+                            <%= product.price %>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </table>
+            <a href="/"><button>Volver al formulario de carga</button></a>
+        </div>
+    </body>
+</html>
