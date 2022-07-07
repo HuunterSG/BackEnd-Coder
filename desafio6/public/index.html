@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+    <h1 class="title">Bienvenidos a Nuestra tienda de bebidas </h1>
+    <main class="layout">
+        <section class="cont-izq">
+            <!-- FORMULARIO PARA PRODUCTOS -->
+            <div id="product-form">
+                <h2>Agregar Producto</h2>
+                <form action="">
+                    <input type="text" id="title" placeholder="Titulo">
+                    <input type="number" id="price" placeholder="Precio">
+                    <input type="button" id="add-product" value="Agregar Producto">
+                </form>
+            </div>
+            <!-- CONTENERDOR DE PRODUCTOS -->
+            <div id="products"></div>
+
+        </section>
+        <section class="cont-der">
+
+            <div>
+                <h2>Sala de Chat</h2>
+                <form onsubmit="return envMsj()">
+                    <input type="email" id="email" placeholder="Ingre su E-mail">
+                    <input type="text" id="mensaje" placeholder="Mensaje">
+                    <input type="submit" value="Enviar Mensaje">
+                </form>
+            </div>
+            <div id="listaMsj">
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>

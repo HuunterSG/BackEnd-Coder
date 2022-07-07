@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "sprite",
+    "price": 400
+  },
+  {
+    "id": 2,
+    "title": "Coca-Cola",
+    "price": 200
+  },
+  {
+    "id": 3,
+    "title": "Fernet",
+    "price": 1000
+  },
+  {
+    "id": 4,
+    "title": "Gancia",
+    "price": 900
+  },
+  {
+    "id": 5,
+    "title": "Gin",
+    "price": 900
+  },
+  {
+    "id": 6,
+    "title": "Andes IPA",
+    "price": 450
+  },
+  {
+    "id": 7,
+    "title": "fanta",
+    "price": "200"
+  },
+  {
+    "title": "agua",
+    "price": "300",
+    "id": 8
+  },
+  {
+    "title": "Vino",
+    "price": "200",
+    "id": 10
+  }
+]

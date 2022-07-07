@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "author": "Agustin Jose Perez Rodriguez",
+  "license": "ISC"
+}

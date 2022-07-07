@@ -1,0 +1,21 @@
+<h2 class="titleList">Nuestra Lista de bebidas</h2>
+<div>
+    {{#if products.length}}
+    <table>
+        <tr class="contTitle">
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+        {{#each products}}
+        <tr class="contTitle">
+            <td>{{this.title}}</td>
+            <td>${{this.price}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    {{else}}
+    <div>
+        <h2>NO HAY PRODUCTOS DISPONIBLES</h2>
+    </div>
+    {{/if}}
+</div>
