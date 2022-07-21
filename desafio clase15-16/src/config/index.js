@@ -19,7 +19,7 @@ const config ={
             useNullAsDefault: true,
         }
     },
-    sercer:{
+    server:{
         PORT: process.env.PORT || DEV_PORT,
     }
 };
