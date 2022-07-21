@@ -2,7 +2,7 @@ import fs from "fs";
 
 class FileSystemCont{
     constructor(filename){
-        this.path =`src/db/${filename}.json`
+        this.path =`./src/db/${filename}.json`
     }
 
     //Mostramos todos los elementos, o un array vacio
