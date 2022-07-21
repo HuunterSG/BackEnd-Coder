@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Mi primer DB</title>
+    <!-- LINKS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- SCRIPTS -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>    
+</head>
+<body>
+    <div>
+        <form >
+            <h4 >Ingrese un producto:</h4>
+            <div>
+                <label for="title" >Título:</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div>
+                <label for="price">Precio:</label>
+                <input type="text" name="price" id="price" required>
+            </div>
+            <div>
+                <label for="thumbnail" >URL de la imagen:</label>
+                <input type="text" name="thumbnail" id="thumbnail" required>
+            </div>
+            <div>
+                <input type="button" id="add-product" value="Agregar Producto">
+            </div>
+        </form>
+    </div>
+    <div id="products"></div>
+
+    <div>
+        
+          <div>
+            <h3> Centro de Mensajes: </h3>
+            <form onsubmit="return enviarMensaje()">
+                <label for="user" >Usuario:</label>
+                <input type="email" id="email" placeholder="Ingrese email...">
+                <input id="mensaje" type="text" placeholder="Escribe un mensaje...">
+                <input type="submit" value="Enviar">        
+            </form>
+            <div id="listaMensajes">
+            </div>
+            
+          </div>
+        
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
